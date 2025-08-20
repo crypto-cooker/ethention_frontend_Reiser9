@@ -8,3 +8,4 @@ export { Blind } from "./Blind";
 export { ArrowRight } from "./ArrowRight";
 export { Close } from "./Close";
 export { Change } from "./Change";
+export { Copy } from "./Copy";

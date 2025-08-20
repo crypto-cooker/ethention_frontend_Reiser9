@@ -10,7 +10,9 @@ import base from "@/shared/styles/base.module.css";
 import {
     ArrowRight,
     Blind,
+    Change,
     Close,
+    Copy,
     Dollar,
     Eth,
     Fire,
@@ -971,7 +973,33 @@ export default function Home() {
                         <Close />
                     </button>
 
-                    
+                    <div className={styles.clientIcon}>
+                        <Image src="/img/client.svg" alt="client" width={31} height={31} />
+                    </div>
+
+                    <p className={styles.clientTitle}>
+                        Add your Client ID
+                    </p>
+
+                    <p className={styles.clientText}>
+                        Before you continue to your dashboard please sync your browser extension si the app.
+                    </p>
+
+                    <div className={styles.clientId}>
+                        6383839hgT
+
+                        <button className={styles.clientIdCopy}>
+                            <Copy />
+
+                            Copy ID
+                        </button>
+                    </div>
+
+                    <button className={styles.clientButton}>
+                        Syncronize App
+
+                        <Change />
+                    </button>
                 </div>
             </Modal>
         </>

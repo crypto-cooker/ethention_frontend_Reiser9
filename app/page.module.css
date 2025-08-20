@@ -42,6 +42,12 @@
     font-weight: 500;
 }
 
+@media (max-width: 480px) {
+    .headerLogo{
+        font-size: 1.4rem;
+    }
+}
+
 .headerButton {
     padding: 0.8rem 2.2rem;
     border-radius: 8px;
@@ -52,6 +58,18 @@
     gap: 15px;
     font-size: 1.8rem;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .headerButton{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 480px) {
+    .headerButton{
+        font-size: 1.4rem;
+        padding: 0.5rem 1.4rem;
+    }
 }
 
 .headerButton span {
@@ -93,12 +111,37 @@
     gap: 5px;
 }
 
+.appTableInner::-webkit-scrollbar{
+    height: 5px;
+}
+
+.appTableInner::-webkit-scrollbar-thumb{
+    background: #605B5B;
+}
+
+.appTableInner::-webkit-scrollbar-track{
+    background: #262626;
+}
+
+@media (max-width: 768px) {
+    .appTableInner{
+        overflow-x: auto;
+    }
+}
+
 .appTableHeader, .appTableContent {
     width: 100%;
     padding: 1.6rem;
     border-radius: 15px;
     background: rgba(19, 19, 19, 0.83);
     border: 1px solid #303030;
+}
+
+@media (max-width: 768px) {
+    .appTableHeader, .appTableContent{
+        flex-shrink: 0;
+        width: 800px;
+    }
 }
 
 .appTableHeader{
@@ -144,6 +187,12 @@
     gap: 30px;
 }
 
+@media (max-width: 1200px) {
+    .appDashboardInner{
+        flex-wrap: wrap;
+    }
+}
+
 .appGetmore{
     width: 100%;
     max-width: 260px;
@@ -157,6 +206,12 @@
     gap: 4px;
     padding: 2rem;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .appGetmore{
+        max-width: 100%;
+    }
 }
 
 .appGetmore img{
@@ -187,6 +242,17 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+}
+
+@media (max-width: 1400px) {
+    .appDashboardWrap{
+        max-width: 600px;
+    }
+}
+@media (max-width: 1200px) {
+    .appDashboardWrap{
+        max-width: 100%;
+    }
 }
 
 .appDashboardInfoWrap{
@@ -268,6 +334,12 @@
     gap: 12px;
 }
 
+@media (max-width: 768px) {
+    .appDashboardInfoContent{
+        flex-wrap: wrap;
+    }
+}
+
 .appReward, .appCollected, .appLeaderboard{
     width: 100%;
     max-width: 280px;
@@ -283,6 +355,12 @@
     backdrop-filter: blur(2px);
 }
 
+@media (max-width: 768px) {
+    .appReward{
+        max-width: 100%;
+    }
+}
+
 .appCollected, .appLeaderboard{
     gap: 9px;
     padding: 1.2rem 3rem;
@@ -291,6 +369,12 @@
     flex-grow: 1;
     max-height: 220px;
     overflow-y: auto;
+}
+
+@media (max-width: 480px) {
+    .appCollected, .appLeaderboard{
+        padding: 1.2rem 2rem;
+    }
 }
 
 .appLeaderboard{
@@ -537,6 +621,12 @@
     box-shadow: 0 0 10px #fff;
 }
 
+@media (max-width: 768px) {
+    .appGetmoreButton{
+        margin-top: 1.2rem;
+    }
+}
+
 .appGetmoreButton:hover {
     color: #fff;
     background: #000;
@@ -724,6 +814,12 @@
     position: relative;
 }
 
+@media (max-width: 480px) {
+    .upgradeModal{
+        padding: 3rem 2.5rem;
+    }
+}
+
 .upgradeModalClose{
     padding: 0;
     width: 25px;
@@ -769,6 +865,12 @@
     border-radius: 15px;
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 420px) {
+    .upgradeModalItem{
+        width: calc(100% / 2 - 8px / 2);
+    }
 }
 
 .upgradeModalItem:before{
@@ -1023,4 +1125,100 @@
     width: 21px;
     flex-shrink: 0;
     color: #EC7F31;
+}
+
+.clientIcon{
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, .34);
+    background: rgba(0, 0, 0, .59);
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientTitle{
+    margin-top: 0.7rem;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.clientText{
+    text-align: center;
+    margin-top: 0.7rem;
+    font-size: 1.8rem;
+    color: #C6C6C6;
+    line-height: 1.16;
+    max-width: 383px;
+}
+
+@media (max-width: 480px) {
+    .clientText{
+        font-size: 1.4rem;
+    }
+}
+
+.clientId{
+    width: 100%;
+    max-width: 340px;
+    margin-top: 3.1rem;
+    padding: 0.8rem 1.2rem 0.9rem 1.9rem;
+    border-radius: 12px;
+    background: rgba(19, 19, 19, 0.83);
+    border: 1px solid rgba(255, 255, 255, .4);
+    font-family: 'OpenSans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.clientIdCopy{
+    background: #101010;
+    border-radius: 50px;
+    padding: 0.4rem 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.8rem;
+}
+
+.clientIdCopy svg{
+    width: 21px;
+    flex-shrink: 0;
+    color: #fff;
+}
+
+.clientIdCopy:hover, .clientButton:hover{
+    opacity: 0.7;
+}
+
+.clientButton{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1.2rem;
+    background: #fff;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 2.9rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.clientButton svg{
+    width: 14px;
+    flex-shrink: 0;
 }
