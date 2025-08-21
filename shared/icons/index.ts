@@ -9,3 +9,8 @@ export { ArrowRight } from "./ArrowRight";
 export { Close } from "./Close";
 export { Change } from "./Change";
 export { Copy } from "./Copy";
+export { Wallet2 } from "./Wallet2";
+export { Flash } from "./Flash";
+export { Double } from "./Double";
+export { ArrowLeft } from "./ArrowLeft";
+export { Question } from "./Question";
