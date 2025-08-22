@@ -271,6 +271,9 @@
 .appDashboardInfoWrap{
     width: 100%;
     position: relative;
+    border-radius: 15px;
+    border: 1px solid #2D2D2D;
+    
 }
 
 .appDashboardInfoWrap:before, .appDashboardInfoWrap:after{
